@@ -1,6 +1,6 @@
 # Nuxt 3 Essentials
 
-## Overview
+### Overview
 
 ### Installation and Configuration
 
@@ -24,3 +24,20 @@ steps:
 
 - create a `/currency` folder under `/pages` => `/pages/currency`
 - in the `/currency` directory create a Vue component named `[id].vue` (with the brackets)
+
+### Custom Layout and Landing Page Content
+
+create a main layout with nav bar with link to the Home Page.
+
+custom layout:
+
+- create `/layouts` at the root of the project
+- create a `default.vue` in `/layouts`, bc it is named `default`, it will be used for all pages in the site,
+
+create api endpoint:
+`/server/api/[...].js`
+note: nuxt will automatically read in any files in the `~/server/api` directory to create api endpoints
+
+display content in component:
+`/pages/index.vue`
+![passing props](docs/passing-props.png)
