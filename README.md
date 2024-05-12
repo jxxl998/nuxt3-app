@@ -1,75 +1,26 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Essentials
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
 
-## Setup
+### Installation and Configuration
 
-Make sure to install the dependencies:
+get started:
 
-```bash
-# npm
-npm install
+- quick start guide: [https://nuxt.com/docs/getting-started](https://nuxt.com/docs/getting-started)
+- create project `npx nuxi init nuxt3-app`
 
-# pnpm
-pnpm install
+directories:
 
-# yarn
-yarn install
+- /layouts, create custom layouts for various part of the site, and then assign a component to use the layout with the `layout` keyword
+  - ![alt text](docs/image.png)
+- /pages, create our URL structure for our app
+  - ![alt text](docs/image-1.png)
 
-# bun
-bun install
-```
+### Creating the URL Structure For Pages
 
-## Development Server
+the URL structure is `mysite.com/currency/{id}`, where {id} is the dynamic value passed in to the component.
 
-Start the development server on `http://localhost:3000`:
+steps:
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- create a `/currency` folder under `/pages` => `/pages/currency`
+- in the `/currency` directory create a Vue component named `[id].vue` (with the brackets)
